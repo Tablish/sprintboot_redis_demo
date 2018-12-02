@@ -22,7 +22,7 @@ public class RedisTestController extends BaseController{
     /*Logger logger = LoggerFactory.getLogger(RedisTestController.class);
         logger.info("lalala");*/
     /**
-     * @auther: zhangyingqi
+     * @auther: qianyongchao
      * @date: 17:26 2018/8/28
      * @param: []
      * @return: org.springframework.ui.ModelMap

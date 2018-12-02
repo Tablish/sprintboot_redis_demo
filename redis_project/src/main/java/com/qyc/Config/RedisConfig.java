@@ -64,7 +64,7 @@ public class RedisConfig {
     //下面的方法：直接将生成对象放大spring 容器中
 
     /**
-     * @auther: zhangyingqi
+     * @auther: qianyongchao
      * @date: 17:52 2018/8/28
      * @param: []
      * @return: org.springframework.data.redis.connection.jedis.JedisConnectionFactory
@@ -86,7 +86,7 @@ public class RedisConfig {
     }
 
     /**
-     * @auther: zhangyingqi
+     * @auther: qianyongchao
      * @date: 17:52 2018/8/28
      * @param: [redisConnectionFactory]
      * @return: com.springboot.demo.base.utils.RedisTemplate
@@ -101,7 +101,7 @@ public class RedisConfig {
     }
 
     /**
-     * @auther: zhangyingqi
+     * @auther: qianyongchao
      * @date: 17:52 2018/8/28
      * @param: []
      * @return: org.springframework.data.redis.serializer.RedisSerializer
@@ -113,7 +113,7 @@ public class RedisConfig {
     }
 
     /**
-     * @auther: zhangyingqi
+     * @auther: qianyongchao
      * @date: 17:51 2018/8/28
      * @param: [redisTemplate, factory]
      * @return: void
@@ -131,7 +131,7 @@ public class RedisConfig {
     }
 
     /**
-     * @auther: zhangyingqi
+     * @auther: qianyongchao
      * @date: 17:51 2018/8/28
      * @param: [redisTemplate]
      * @return: com.springboot.demo.base.utils.RedisUtil
