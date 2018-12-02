@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-2.5.xsd
+            http://www.springframework.org/schema/aop
+            http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+    <context:annotation-config/>
+    <context:component-scan base-package="com.aop"/>
+    <bean id="logInterceptor" class="com.aop.AdviceConfig.LogInterceptor"></bean>
+    <aop:config>
+        <!-- <aop:pointcut >在此处定义的pointcut是全局的pointcut可以供所有的aspect使用
+            id:表示这个pointcut的名称，以方便使用-->
+
+
+        <aop:pointcut id="myMethod" expression="execution(public * com.aop.Controller.*.*(..))" ></aop:pointcut>
+        <!--  <aop:aspect>表示定义一个切面类(这需要Spring初始化加入其管理)
+            id:切面类的名称，
+            ref:引用哪个bean(需要使用<bean>标签初始化)-->
+
+        <aop:aspect id="logAcpect" ref="logInterceptor">
+             <!-- 在此处定义的pointcut是全局的pointcut只供当前的aspect使用
+                  id:表示这个pointcut的名称，以方便使用 -->
+             <aop:pointcut id="myMethod2" expression="execution(public * com.aop.Controller.*.*(..))" />
+
+            <!--
+                定义advice时的参数
+                method:切面逻辑的方法名称(切面类中的方法名)
+                pointcut-ref：表示引用哪个pointcut(要求已经在上面定义好了)
+                pointcut：定义一个pointcut     -->
+            <aop:before method="before" pointcut-ref="myMethod"/>
+
+           <aop:after-returning method="after" pointcut="execution(public * com.aop.Controller.*.*(..))"/>
+
+        </aop:aspect>
+
+
+
+   </aop:config>
+
+</beans>
