@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a11a39ec-83cc-48e3-94cc-010c72fbd4d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/redis_project/src/main/resources/redis-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/redis_project/src/main/resources/redis-dev.properties" afterDir="false" />
-    </list>
+    <list default="true" id="a11a39ec-83cc-48e3-94cc-010c72fbd4d3" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/elastic-search/target/" />
     <ignored path="$PROJECT_DIR$/shiro-basic/target/" />
     <ignored path="$PROJECT_DIR$/quartz-test/target/" />
@@ -19,6 +17,7 @@
     <session id="1514912722">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -107,7 +106,7 @@
         <entry file="file://$PROJECT_DIR$/redis_project/src/main/resources/redis-dev.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="550">
-              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -319,16 +318,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543738141167</updated>
-      <workItem from="1543738143800" duration="1455000" />
+      <workItem from="1543738143800" duration="2054000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1455000" />
+    <option name="totallyTimeSpent" value="2054000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -419,7 +417,7 @@
     <entry file="file://$PROJECT_DIR$/redis_project/src/main/resources/redis-dev.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
         </state>
       </provider>
     </entry>
